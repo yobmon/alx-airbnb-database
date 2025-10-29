@@ -11,4 +11,5 @@ ON p.property_id =r.property_id;
 SELECT u.user_id,b.status 
 FROM "User" u 
 FULL OUTER JOIN "booking" b 
-on u.user_id = b.user_id;
+on u.user_id = b.user_id
+ORDER BY u.user_id;
